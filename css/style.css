@@ -1,8 +1,6 @@
 /* =========================================================
    PLANET NETWORK NUSANTARA
-   CLEAN STYLE.CSS
-   ROOT + GLOBAL + HEADER / NAVBAR
-========================================================= */
+  ========================================================= */
 
 /* ===== ROOT COLOR ===== */
 :root {
@@ -1938,13 +1936,15 @@ h2 {
 
 /* ===== DESKTOP PREMIUM HOVER ===== */
 @media (min-width: 961px) {
+
   .trust:hover,
   .quick-card:hover,
   .panel:hover,
   .business-card:hover,
-  .contact-card:hover,
-  .float-wa:hover {
+  .partner-card:hover,
+  .contact-card:hover {
     transform: translateY(-8px) scale(1.015);
+    box-shadow: 0 35px 85px rgba(5, 20, 44, .25);
   }
 
   .story-photo:hover {
@@ -1953,9 +1953,11 @@ h2 {
 
   .footer-menu a:hover,
   .social-link:hover,
-  .btn:hover {
+  .btn:hover,
+  .float-wa:hover {
     transform: translateY(-2px);
   }
+
 }
 
 /* ===== MOBILE TOUCH SAFE MODE ===== */
@@ -2219,7 +2221,7 @@ animation-duration:1.1s;
   section,
   .hero,
   .quick-section,
-  .rofil,
+  #profil,
   .partner-section,
   .business,
   .story-section,
@@ -2307,22 +2309,7 @@ animation-duration:1.1s;
 
 }
 }
-/* ===== MOBILE CARD PRESS EFFECT ===== */
-@media (max-width: 960px) {
 
-  .quick-card:active,
-  .panel:active,
-  .business-card:active,
-  .partner-card:active,
-  .story-photo:active,
-  .contact-card:active,
-  .info-item:active,
-  .glass-card:active {
-    transform: translateY(-6px) scale(1.012);
-    box-shadow: 0 28px 70px rgba(5, 20, 44, .28);
-  }
-
-}
 /* =========================================================
    404 PAGE
 ========================================================= */
