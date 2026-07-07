@@ -1,6 +1,8 @@
 /* =========================================================
    PLANET NETWORK NUSANTARA
-  ========================================================= */
+   CLEAN STYLE.CSS
+   ROOT + GLOBAL + HEADER / NAVBAR
+========================================================= */
 
 /* ===== ROOT COLOR ===== */
 :root {
@@ -1918,7 +1920,23 @@ h2 {
   opacity: 1;
   transform: translateX(0) translateY(0);
 }
+/* ===== MOBILE SMOOTH REVEAL ===== */
 
+@media (max-width: 960px) {
+
+  .reveal-up {
+    transform: translateY(18px);
+  }
+
+  .reveal-left {
+    transform: translateX(-18px);
+  }
+
+  .reveal-right {
+    transform: translateX(18px);
+  }
+
+}
 /* ===== PERFORMANCE HINT ===== */
 .trust,
 .quick-card,
@@ -1983,24 +2001,27 @@ h2 {
 }
 /* ===== REDUCE MOTION SUPPORT ===== */
 @media (prefers-reduced-motion: reduce) {
+
   html {
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    transition: none !important;
+  body *,
+  body *::before,
+  body *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
   }
 
   .reveal,
   .reveal-left,
   .reveal-right,
   .reveal-up {
-    opacity: 1 !important;
-    transform: none !important;
+    opacity: 1;
+    transform: none;
   }
+
 }
 
 /* ===== FINAL MOBILE POLISH ===== */
